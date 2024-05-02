@@ -1,0 +1,29 @@
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 2,
+  "todo": "HTML",
+  "priority": "HIGH",
+  "status": "DONE"
+}
+
+###
+GET http://localhost:3000/todos/?status=TO%20DO
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+
+###
+GET  http://localhost:3000/todos/2
+
+###
+DELETE  http://localhost:3000/todos/2
+
+###
+PUT http://localhost:3000/todos/1/
+content-type: application/json 
+
+{
+    "todo": "Do Mass Work"
+}
